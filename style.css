@@ -1,0 +1,661 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+}
+#home_Page{
+    width: 100%;
+   
+    margin: 0;
+    padding: 10px;
+}
+nav{
+    height:15vh;
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: rgba(255, 228, 196, 0.497);
+}
+#nav_one{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+#nav_one>h1{
+
+ font-size: 22px;
+ font-weight: bolder;
+}
+#nav_two{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+#nav_two>a{
+    font-size: 18px;
+   
+    font-weight: 500;
+    color:black;
+    text-decoration: none;
+}
+#nav_three{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+#bakery{
+    padding-top: 28px;
+    height:60vh;
+    width: 100%;
+  display: flex;
+    justify-content: center;
+}
+#bakery img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+#icon1{
+    font-size: 22px;
+}
+#cart_quantity{
+   font-size: 14px;
+   height: 18px;
+   width: 18px;
+   border: 1px solid white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   right:12px;
+   bottom: 14px;
+   background-color: white;
+   }
+   #cart_price{
+    font-size:22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: 400; 
+   }
+   header{
+    height: 65vh;
+    /* padding: 12px; */
+    /* border:1px solid black; */
+    background: url("./image1.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0px 80px;
+    border-radius: 15px;
+    filter: brightness(65%);
+   }
+   header:hover{
+      filter: brightness(90%);
+   }
+   #bakery_description{
+    height:35vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   #bakery_description>h2{
+        font-size: clamp(24px,5vw,40px);
+        line-height: 1.2;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-weight: 600;
+   }
+   #bakery_description p{
+    font-size: 15px;
+    margin-top: 10px;
+   }
+   
+
+   #bakery_description>button{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgb(255, 166, 0);
+        color: whitesmoke;
+        padding: 10px 10px;
+        border-radius: 5px;
+   }
+   #bakery_description>button:hover{
+    background-color: orangered;
+   }
+   #bakery_items{
+    height: 39vh;
+    width: 100%;
+   display: flex;
+        justify-content: center;
+        flex-direction: column;
+    gap:6px;
+    
+
+     /* border:1px solid red;  */
+   }
+    #bakery_items>h2{
+        font-size: 30px ;
+        
+        font-family: Georgia, 'Times New Roman', Times, serif;
+         padding: 5px; 
+        text-align: center;
+    }
+   
+     #items_container{
+        padding: 10px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:70px;
+        transition: all 1s 0s ease;
+    } 
+    .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .items>p{
+    padding: 7px;
+   }
+    
+     .items>img{
+        height: 150px;
+        width: 200px;
+       
+     }
+     .items>img:hover{
+        transform: scale(1.2,1.1);
+     }
+
+#adresses{
+    height: 25vh;
+    /* padding: 3px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#adresses>h1{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+#adresses>h3{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+#adresses>button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgb(255, 166, 0);
+        color: whitesmoke;
+        padding: 10px 10px;
+        border-radius: 5px;
+}
+ #adresses>button:hover{
+    background-color: rgba(255, 0, 0, 0.648);
+   }
+/* about us start here */
+#about_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+
+   
+}
+#about_us>h1{
+   font-size: 30px;
+   font-weight: 700;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#about_us>p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+    padding: 0px 10px;
+}
+#about_page_description{
+    padding: 15px;
+   height: 55vh; 
+   width: 100%;
+   /* border: 1px solid black; */
+   display: flex;
+  
+
+}
+#desc_one{
+    flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 15px;
+
+}
+#desc_one>h1{
+    font-size: 30px;
+   font-weight: 700;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding-left: 15px;
+   margin-top: 15px;
+}
+#desc_one>p{
+    text-align: center;
+}
+#desc_two{
+    flex-basis: 35%;
+}
+#desc_two>img{
+     flex-basis: 40%;
+     padding-top: 5px;
+     padding-left: 5px;
+    /* border: 1px solid blue; */ 
+     height: 300px;
+    width: 430px;
+    border-radius: 10px; 
+}
+#desc_three{
+    flex-basis: 35%;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 30px;
+    padding-left:15px;
+}
+#desc_three>h1{
+font-size: 30px;
+   font-weight: 700;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#desc_three>p{
+text-align: center;
+}
+#visit_section{
+    padding-top: 5px;
+    height:30vh;
+    /* border: 1px solid black; */
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+
+
+}
+#visit_one{
+flex-basis: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+gap: 10px;
+}
+#visit_one>h1{
+text-align: center;
+  font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+#visit_one>h3{
+font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#visit_one>button{
+font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgb(255, 166, 0);
+        color: whitesmoke;
+        padding: 10px 10px;
+        border-radius: 5px;
+}
+#visit_two{
+flex-basis: 50%;
+}
+#visit_two>img{
+    height:180px;
+    width:350px;
+    border-radius: 5px;
+}
+/* contACT page start here */
+#contact_page{
+    height:85vh;
+    /* border: 1px solid red; */
+    display: flex;
+}
+#contact_one{
+    flex-basis: 50%;
+
+    /* border: 1px solid black; */
+    display: flex;
+   flex-direction: column; 
+  justify-content: flex-start;
+  align-items: center;
+}
+#contact_one>h1{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#name,#email{
+        margin-top: 8px;
+    height: 40px;
+    width: 290px;
+    border-radius: 5px;
+    padding-left: 10px;
+  
+    
+}
+
+textarea{
+     border-radius: 7px;
+     padding-left: 13px;
+}     
+#submit{
+     height: 40px;
+    width: 300px;
+    background-color: orange;
+     border-radius: 5px;
+     color: white;
+}
+#submit:hover{
+    background-color: orangered;
+}
+
+#contact_two{
+margin-left: 15px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap:18px;
+
+}
+#contact_two>h1{
+    
+    font-size: 30px;
+   font-weight: 700;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+div{
+    /* border: 1px solid red; */
+}
+#contact_two>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+#contact_two>div>img{
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+/* menu page starthere */
+
+#menu_filter{
+    height:20vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#menu_filter>h1{
+      font-size: 35px;
+   font-weight: 700;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#filter_btns{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+gap: 40px;
+}
+#filter_btns>button{
+    padding: 7px 10px;
+    border-radius:13px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+   }
+#filter_btns>button:hover{
+      background-color:orange;
+      color: white;
+      border-color: white;
+    }
+#menu_items{
+  height: 80vh;
+  /* border:1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card{
+    width: 350px;
+     display: flex;
+  flex-direction: column;
+  gap:30px;
+   padding: 10px 8px;  
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(0, 0, 0, 0.033);
+  border-radius: 10px;
+  /* margin: 20px; */
+}
+
+.card_one{
+flex-basis: 50%;
+ 
+/* background-color: whitesmoke; */
+border-radius:10px ;
+display:flex;
+justify-content:flex-start;
+align-items: center; 
+gap:25px;
+
+}
+.card_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+.cardinfo>h2{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card_img>img{
+
+    height: 120px;
+width: 140px;
+    border-radius: 10px;
+}
+ .card_two{
+/* flex-basis: 50%;  */
+width:35vw;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap:100px;
+
+ 
+
+/* border: 1px solid black; */
+
+}
+.card_quantity{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 8px;
+
+}
+.minus,.plus{
+    /* border: 1px solid black; */
+    padding: 4px 9px;
+    border-radius:50% ;
+    background-color:chocolate;
+    color: white;
+
+}
+.card_quantity>div{
+    font-size: 20px;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+
+.addto_cart>button{
+ padding: 7px 18px;
+ border-radius: 8px;
+    font-size: 15px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: 1px solid white;
+background-color:chocolate;
+color: white;
+
+}
+/* nav{
+    height:15vh;
+    width: 100vw;
+} */
+#sidebar{
+height: 100vh;
+width: 350px;
+background-color: white;
+position: absolute;
+top: 0px;
+right: -350px;
+z-index: 100;
+
+
+}
+#sidebar_one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+.items_info{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+   
+
+  #nav_one,
+  #nav_two,
+  #nav_three {
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 5px 0px;
+  }
+
+  #nav_two {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+
+ nav{
+    flex-direction:  column;
+ }
+ #bakery{
+    flex-direction: column;
+    align-items: center;
+ }
+ #bakery_description{
+    padding: 2px;
+ }
+ #bakery img{
+    max-width: 100%;
+ }
+}
+#about h1{
+  font-size: clamp(22px, 6vw, 38px);
+  line-height: 1.3;
+}
+#about p{
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width:480px){
+
+  #about{
+    padding: 10px;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
