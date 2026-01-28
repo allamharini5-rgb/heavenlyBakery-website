@@ -620,10 +620,12 @@ z-index: 100;
     align-items: center;
  }
  #bakery_description{
-    padding: 2px;
+    padding: 8px;
  }
  #bakery img{
     max-width: 100%;
+    height: auto;
+    margin-top: 15px;
  }
 }
 #about h1{
@@ -634,12 +636,12 @@ z-index: 100;
   font-size: 16px;
   line-height: 1.6;
 }
-@media (max-width:480px){
+
 
   #about{
     padding: 10px;
   
-}
+
 
 }
 
