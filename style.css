@@ -299,7 +299,7 @@ font-size: 30px;
 text-align: center;
 }
 #visit_section{
-    padding-top: 5px;
+    padding-top: 15px;
     height:30vh;
     /* border: 1px solid black; */
  display: flex;
@@ -608,11 +608,9 @@ z-index: 100;
     flex-wrap: wrap;
   }
 }
-
-/* Mobile View */
-@media (max-width: 480px) {
-
- nav{
+ /* mobile view */
+@media (max-width: 500px) {
+    nav{
     flex-direction:  column;
  }
  #bakery{
@@ -628,36 +626,19 @@ z-index: 100;
     margin-top: 15px;
  }
 }
+
 #about h1{
   font-size: clamp(22px, 6vw, 38px);
-  line-height: 1.3;
+  line-height:1.6;
 }
 #about p{
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-
-  #about{
-    padding: 10px;
-  
-
-
+#about{
+    padding: 10px;}
+#visit_one h1{
+    padding:10px;
+  font-size: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
